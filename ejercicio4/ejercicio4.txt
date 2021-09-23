@@ -1,0 +1,10 @@
+
+open System 
+let lista = [1 .. 10]
+printfn "LISTA : %A" lista
+
+let list1 = lista |> List.filter (fun x -> x % 2 = 1);;
+let list2 = lista |> List.filter (fun x -> x % 2 = 0);;
+printfn " lista Inpares: %A" list1
+printfn "   lista Pares: %A" list2
+Console.ReadKey() |>ignore

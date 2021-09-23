@@ -1,0 +1,9 @@
+
+vector<-c(1,1,3,3,4,4,5,5,5,5)
+vector                        # Vector 
+tabla <- table(vector)        #La función table sirve para construir tablas de frecuencia de una vía
+tabla
+sort(tabla, decreasing=TRUE)  # Ordenar en orden creciente (FALSE) o decrecienete (TRUE)
+which.max(tabla)              # Devolverá la frecuencia máxima.
+as.numeric(names(which.max(tabla))) #Asignar nombres a los elementos de un vector con la función names(),
+                                    # as.numeric() convierten los argumentos dados a los tipos correspondientes
